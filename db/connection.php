@@ -1,10 +1,11 @@
 <?php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "plasticpollutions_db";
+$host = getenv('MYSQLHOST');
+$user = getenv('MYSQLUSER');
+$password = getenv('MYSQLPASSWORD');
+$database = getenv('MYSQLDATABASE');
+$port = (int)getenv('MYSQLPORT');
 
-$conn = mysqli_connect($host, $user, $pass, $db);
+$conn = mysqli_connect($host, $user, $password, $database, $port);
 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
