@@ -1,0 +1,51 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Slider Image Height */
+.slider-img {
+    height: 600px;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 1.4rem;
+}
+
+/* Cards hover effect */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12) !important;
+}
+
+/* Counter numbers */
+.counter {
+    font-size: 3rem;
+}
+
+/* Cookie Banner */
+#cookieBanner {
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+}
+
+/* Footer links hover */
+footer a:hover {
+    color: #fff !important;
+    text-decoration: underline !important;
+}
+
+/* Responsive slider */
+@media (max-width: 768px) {
+    .slider-img {
+        height: 300px;
+    }
+    .counter {
+        font-size: 2rem;
+    }
+}
